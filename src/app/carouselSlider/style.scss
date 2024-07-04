@@ -1,0 +1,53 @@
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-share.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-thumbnail.css');
+
+/* Custom styles for gallery container */
+.custom-gallery-container {
+  margin-top: 100px; /* Adjust margin top if needed */
+  margin-bottom: 100px; /* Adjust margin bottom if needed */
+}
+
+/* Styles for gallery items */
+.image-gallery-thumbnail {
+  width: 200px; /* Adjust size if needed */
+  margin: 5px;
+}
+
+.image-gallery-item {
+  text-align: center;
+}
+
+.image-gallery-item img {
+  width: 400px; /* Adjust size as needed */
+  height: 400px; /* Adjust size as needed */
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Styles for captions */
+.lightGallery-captions {
+  margin: 60px;
+}
+
+.lightGallery-captions p {
+  margin: 0.5rem 0;
+  font-size: 20px;
+  color: #e3e2eb;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in;
+}
+
+/* Transition effects for captions */
+.lg-current .lightGallery-captions p{
+  transition-delay: 500ms;
+}
+
+.lg-current.lg-slide-progress .lightGallery-captions p {
+  transition-delay: 0ms;
+}
